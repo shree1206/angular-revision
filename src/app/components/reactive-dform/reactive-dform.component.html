@@ -1,0 +1,6 @@
+<p>reactive-dform works!</p>
+<!-- (ngSubmit)="postdata(signupForm)" -->
+<form [formGroup]="signupForm" (ngSubmit)="postdata()">
+    <input type="text" formControlName="fname">
+    <input type="submit" value="save" [disabled]="!signupForm.valid">
+</form>

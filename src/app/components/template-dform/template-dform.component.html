@@ -1,0 +1,6 @@
+<form #regForm='ngForm' (ngSubmit)="register(regForm)">
+    <input type="text" name="Fname" ngModel required>
+    <input type="text" name="Email" ngModel required email #email="ngModel">
+    <span *ngIf="email.touched && !email.valid">Please Enter correct email</span>
+    <input type="submit" value="save" [disabled]="!regForm.valid">
+</form>

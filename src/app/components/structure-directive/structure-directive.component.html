@@ -1,0 +1,12 @@
+<p>structure-directive works!</p>
+
+<h1>*ngIf with then and else</h1>
+<p (click)="change(true)">True</p>
+<p (click)="change(false)">False</p>
+<div *ngIf="isValid; then thenblock; else elseBlock"></div>
+
+<ng-template #thenblock>this is then block</ng-template>
+<ng-template #elseBlock>this is else block</ng-template>
+
+<br>
+<h1>*ngFor</h1>

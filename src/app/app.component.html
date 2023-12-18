@@ -1,0 +1,19 @@
+<app-parent></app-parent>
+<p appAppSubtitle>vaibhav chaudhary</p>
+
+<button>add</button> <button>add</button> <button>add</button> <button>add</button>
+
+
+<p>Two way data binding using property and event binding</p>
+{{adata}}
+<input type="text" #abcd  [value]="adata" (keyup)="abc(abcd.value);">
+
+<p>Two way data binding using ngModel</p>
+{{username}}
+<input type="text" [(ngModel)]="username">
+<br>
+<a routerLink="/TForm">TForm</a>
+<a routerLink="/RForm">RForm</a>
+<a routerLink="/sd">SD</a>
+<a routerLink="/promise">Promise</a>
+<router-outlet></router-outlet>

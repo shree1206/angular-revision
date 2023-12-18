@@ -1,0 +1,8 @@
+<p>parent works!</p>
+<input type="text" #Pcomponent (keyup)="0">
+<br>
+from child component: {{Cdata}}
+<app-child [Pdata]="Pcomponent.value" (Ccomponent)="getdatafromChild($event)"></app-child>
+
+
+
